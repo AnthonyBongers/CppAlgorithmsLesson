@@ -29,8 +29,8 @@ int main()
 	auto item_2 = std::find(begin(collection), end(collection), 8);
 
 	// Print out the items if you find them.
-	if (item_1 != end(collection)) cout << "Element found: " << *item_1 << endl;
-	if (item_2 != end(collection)) cout << "Element found: " << *item_2 << endl;
+	if (item_1 != end(collection)) std::cout << "Element found: " << *item_1 << endl;
+	if (item_2 != end(collection)) std::cout << "Element found: " << *item_2 << endl;
 }
 
 // Output:
