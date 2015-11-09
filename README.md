@@ -48,9 +48,9 @@ int main()
 {
 	std::vector<int> collection { 1, 2, 3, 4, 500 };
 
-	auto very_large_condition = [](int value) { return value > 100; };
+	auto isBig = [](int value) { return value > 100; };
 
-	auto item = std::find_if(begin(collection), end(collection), very_large_condition);
+	auto item = std::find_if(begin(collection), end(collection), isBig);
 
 	if (item != end(condition)) std::cout << "Element found: " << *item << endl;
 }
