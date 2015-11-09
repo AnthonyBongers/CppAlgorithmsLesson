@@ -13,7 +13,7 @@ Function Signature:
 InputIterator find (InputIterator first, InputIterator last, const T& value);
 ```
 
-```
+```cpp
 #include <iostream>  // std::cout
 #include <algorithm> // std::find
 #include <vector>    // std::vector
@@ -39,7 +39,7 @@ int main()
 
 ### find_if
 
-```
+```cpp
 #include <iostream>  // std::cout
 #include <algorithm> // std::find_if
 #include <vector>    // std::vector
