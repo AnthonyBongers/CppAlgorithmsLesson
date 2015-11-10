@@ -83,7 +83,7 @@ int main()
 	auto isOdd = [](int value) { return value & 1; };
 
 	// Find the non-odd item in the collection
-	auto item = std::find_if(begin(collection), end(collection), isBig);
+	auto item = std::find_if_not(begin(collection), end(collection), isBig);
 
 	// Output the result if found
 	if (item != end(condition)) std::cout << "Element found: " << *item << endl;
