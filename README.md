@@ -13,6 +13,8 @@ Function Signature:
 InputIterator find (InputIterator first, InputIterator last, const T& value);
 ```
 
+Here is an example of 'find' in action. It shows one example of a successful find, and another of an unsuccessful find.
+
 ```cpp
 #include <iostream>  // std::cout
 #include <algorithm> // std::find
