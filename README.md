@@ -125,11 +125,11 @@ int main()
 
 ## Partition Algorithms
 
-is_partitioned
-partition
-stable_partition
-partition_copy
-partition_point
+### is_partitioned
+### partition
+### stable_partition
+### partition_copy
+### partition_point
 
 ## Min / Max Algorithms
 
