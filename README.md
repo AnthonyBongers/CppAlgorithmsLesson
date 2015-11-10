@@ -37,6 +37,8 @@ int main()
 // Element found: 1
 ```
 
+**Complexity**: Linear
+
 ### find_if
 
 ```cpp
