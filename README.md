@@ -68,6 +68,31 @@ int main()
 ```
 
 ### find_if_not
+
+```cpp
+#include <iostream>  // std::cout
+#include <algorithm> // std::find_if
+#include <vector>    // std::vector
+
+int main()
+{
+	// The collection to search
+	std::vector<int> collection { 1, 2, 3, 4, 5 };
+
+	// The search predicate. True for a successful find.
+	auto isOdd = [](int value) { return value & 1; };
+
+	// Find the non-odd item in the collection
+	auto item = std::find_if(begin(collection), end(collection), isBig);
+
+	// Output the result if found
+	if (item != end(condition)) std::cout << "Element found: " << *item << endl;
+}
+
+// Output:
+// Element found: 2
+```
+
 ### find_end
 ### find_first_of
 ### adjacent_find
