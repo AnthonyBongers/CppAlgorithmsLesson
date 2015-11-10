@@ -27,12 +27,12 @@ int main()
 
 	// Try to find two items in the collection.
 	// item_1 exists and item_2 doesn't.
-	auto item_1 = std::find(begin(collection), end(collection), 1);
-	auto item_2 = std::find(begin(collection), end(collection), 8);
+	auto item_1 = std::find(std::begin(collection), std::end(collection), 1);
+	auto item_2 = std::find(std::begin(collection), std::end(collection), 8);
 
 	// Print out the items if you find them.
-	if (item_1 != end(collection)) std::cout << "Element found: " << *item_1 << endl;
-	if (item_2 != end(collection)) std::cout << "Element found: " << *item_2 << endl;
+	if (item_1 != std::end(collection)) std::cout << "Element found: " << *item_1 << endl;
+	if (item_2 != std::end(collection)) std::cout << "Element found: " << *item_2 << endl;
 }
 
 // Output:
@@ -57,10 +57,10 @@ int main()
 	auto isBig = [](int value) { return value > 100; };
 
 	// Find the item in the collection
-	auto item = std::find_if(begin(collection), end(collection), isBig);
+	auto item = std::find_if(std::begin(collection), std::end(collection), isBig);
 
 	// Output the result if found
-	if (item != end(condition)) std::cout << "Element found: " << *item << endl;
+	if (item != std::end(condition)) std::cout << "Element found: " << *item << endl;
 }
 
 // Output:
@@ -83,10 +83,10 @@ int main()
 	auto isOdd = [](int value) { return value & 1; };
 
 	// Find the non-odd item in the collection
-	auto item = std::find_if_not(begin(collection), end(collection), isBig);
+	auto item = std::find_if_not(std::begin(collection), std::end(collection), isBig);
 
 	// Output the result if found
-	if (item != end(condition)) std::cout << "Element found: " << *item << endl;
+	if (item != std::end(condition)) std::cout << "Element found: " << *item << endl;
 }
 
 // Output:
