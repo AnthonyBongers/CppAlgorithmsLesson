@@ -22,7 +22,7 @@ Here is an example of 'find' in action. It shows one example of a successful fin
 
 int main()
 {
-	// The collection we will search
+	// The collection to search
 	std::vector<int> collection { 1, 2, 3, 4, 5 };
 
 	// Try to find two items in the collection.
@@ -50,12 +50,16 @@ int main()
 
 int main()
 {
+	// The collection to search
 	std::vector<int> collection { 1, 2, 3, 4, 500 };
 
+	// The search predicate. True for a successful find.
 	auto isBig = [](int value) { return value > 100; };
 
+	// Find the item in the collection
 	auto item = std::find_if(begin(collection), end(collection), isBig);
 
+	// Output the result if found
 	if (item != end(condition)) std::cout << "Element found: " << *item << endl;
 }
 
