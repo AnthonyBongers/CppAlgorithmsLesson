@@ -16,7 +16,7 @@ InputIterator find (InputIterator first, InputIterator last, const T& value);
 Here is an example of 'find' in action. It shows one example of a successful find, and another of an unsuccessful find.
 
 ```cpp
-#include <iostream>  // std::cout
+#include <iostream>  // std::cout, std::endl
 #include <algorithm> // std::find
 #include <vector>    // std::vector
 
@@ -53,7 +53,7 @@ InputIterator find_if (InputIterator first, InputIterator last, UnaryPredicate p
 Here is an example of std::find_if in action. Notice how instead of a direct comparison to a value like in std::find, we're comparing based off of some logic in a lambda. In this case, we're trying to find the first element in a container with the value greater than 100.
 
 ```cpp
-#include <iostream>  // std::cout
+#include <iostream>  // std::cout, std::endl
 #include <algorithm> // std::find_if
 #include <vector>    // std::vector
 
@@ -90,7 +90,7 @@ InputIterator find_if (InputIterator first, InputIterator last, UnaryPredicate p
 Here is an example of std::find_if_not. Here we're using a predicate to determine if a number is odd. Since we're using it in std::find_if_not, it will return the first element in the list that **isn't** odd. 
 
 ```cpp
-#include <iostream>  // std::cout
+#include <iostream>  // std::cout, std::endl
 #include <algorithm> // std::find_if_not
 #include <vector>    // std::vector
 
@@ -130,9 +130,9 @@ ForwardIterator1 find_end (ForwardIterator1 first1, ForwardIterator1 last1,
 ```
 
 ```cpp
-#include <iostream>
-#include <algorithm>
-#include <vector>
+#include <iostream>  // std::cout, std::endl
+#include <algorithm> // std::find_end
+#include <vector>    // std::vector
 
 int main()
 {
