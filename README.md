@@ -31,8 +31,8 @@ int main()
   auto item_2 = std::find(collection.begin(), collection.end(), 8);
 
   // Print out the items if you find them.
-  if (item_1 != collection.end()) std::cout << "Element found: " << *item_1 << endl;
-  if (item_2 != collection.end()) std::cout << "Element found: " << *item_2 << endl;
+  if (item_1 != collection.end()) std::cout << "Element found: " << *item_1 << std::endl;
+  if (item_2 != collection.end()) std::cout << "Element found: " << *item_2 << std::endl;
 }
 
 // Output:
@@ -69,7 +69,7 @@ int main()
   auto item = std::find_if(collection.begin(), collection.end(), isBig);
 
   // Output the result if found
-  if (item != condition.end()) std::cout << "Element found: " << *item << endl;
+  if (item != condition.end()) std::cout << "Element found: " << *item << std::endl;
 }
 
 // Output:
@@ -106,7 +106,7 @@ int main()
   auto item = std::find_if_not(collection.begin(), collection.end(), isOdd);
 
   // Output the result if found
-  if (item != condition.end()) std::cout << "Element found: " << *item << endl;
+  if (item != condition.end()) std::cout << "Element found: " << *item << std::endl;
 }
 
 // Output:
